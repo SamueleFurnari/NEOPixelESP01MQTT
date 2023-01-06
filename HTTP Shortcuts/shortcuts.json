@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": "60586fad-761d-4b89-b4c5-38c431e3c494",
+      "name": "Scorciatoie",
+      "shortcuts": [
+        {
+          "description": "Attiva/Disattiva ring controller",
+          "headers": [
+            {
+              "id": "37610859-eef9-410b-b2c9-01d16cd794e1",
+              "key": "Authorization",
+              "value": "jfjfrr99e3"
+            }
+          ],
+          "iconName": "flat_color_cursor",
+          "id": "a274473b-79d5-4de9-9c6b-695170f45c88",
+          "name": "OnOff",
+          "responseHandling": {},
+          "url": "http://ring_controller.local:82/onOff?v\u003d{{5e0c8401-55c1-41b0-b32c-92835f8c9e02}}"
+        },
+        {
+          "description": "Resetta configurazione ring controller",
+          "headers": [
+            {
+              "id": "c8ef52c4-4a85-4287-9f34-fbbde2968d7b",
+              "key": "Authorization",
+              "value": "jfjfrr99e3"
+            }
+          ],
+          "iconName": "flat_color_cursor",
+          "id": "e771b1a9-d728-4624-96e4-cc4a20910f0f",
+          "name": "Reset",
+          "responseHandling": {},
+          "url": "http://Ring_Controller.local:82/reset"
+        },
+        {
+          "description": "Imposta animazione",
+          "headers": [
+            {
+              "id": "7b9d2201-61e5-44b1-b420-872b3aca1e6e",
+              "key": "Authorization",
+              "value": "jfjfrr99e3"
+            }
+          ],
+          "iconName": "flat_color_cursor",
+          "id": "b40574dd-d03a-4816-a82a-1fa546fe3309",
+          "name": "SetAnimation",
+          "responseHandling": {},
+          "url": "http://Ring_Controller.local:82/setAnimation?v\u003d{{506d0ccc-a6ec-4e32-8d16-0ae15c835248}}"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "id": "506d0ccc-a6ec-4e32-8d16-0ae15c835248",
+      "key": "Animation",
+      "options": [
+        {
+          "id": "db846496-03b2-4928-9439-95261b50234c",
+          "label": "Flame",
+          "value": "A0"
+        },
+        {
+          "id": "4b798c2a-0db1-4c3d-b967-59deef677330",
+          "label": "Rotating rainbow",
+          "value": "A1"
+        },
+        {
+          "id": "faa32278-0df9-422e-a6a2-df316626ea01",
+          "label": "Rotating red",
+          "value": "A2"
+        },
+        {
+          "id": "d6d0faa1-cf59-4056-8402-c48e4f364cd7",
+          "label": "Rotating with change color",
+          "value": "A3"
+        }
+      ],
+      "type": "select"
+    },
+    {
+      "id": "5e0c8401-55c1-41b0-b32c-92835f8c9e02",
+      "key": "OnOff",
+      "options": [
+        {
+          "id": "c408b19b-1ce8-4df2-bb43-26491a507b42",
+          "label": "On",
+          "value": "1"
+        },
+        {
+          "id": "44a0f1eb-8fbd-4cf7-85b1-176f0013bfd7",
+          "label": "Off",
+          "value": "0"
+        }
+      ],
+      "type": "select"
+    }
+  ],
+  "version": 56
+}
