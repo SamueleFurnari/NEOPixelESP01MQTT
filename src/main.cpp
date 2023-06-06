@@ -19,7 +19,7 @@ ConfigStorage configStorage;
 
 // WiFiManager variables, used to get MQTT configuration
 WiFiManagerParameter customMqttEnabled("e", "MQTT Enabled", "1", 1, "type='checkbox' style='width: auto;'><label for='e'> MQTT Enabled</label");
-WiFiManagerParameter customMqttServer("server", "MQTT Server", ringControllerSettings.mqttServer, 16, "pattern='\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'");
+WiFiManagerParameter customMqttServer("server", "MQTT Server", ringControllerSettings.mqttServer, 16, "pattern='\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}'");
 WiFiManagerParameter customMqttUser("user", "MQTT User", ringControllerSettings.mqttUser, 13);
 WiFiManagerParameter customMqttPassword("password", "MQTT Password", ringControllerSettings.mqttPassword, 10);
 
